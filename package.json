@@ -8,6 +8,14 @@
     "typescript",
     "template"
   ],
+  "homepage": "https://github.com/jackluson/node-typescript-template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackluson/node-typescript-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jackluson/node-typescript-template/issues"
+  },
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
