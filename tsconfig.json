@@ -3,7 +3,7 @@
     "target": "es5",
     "module": "commonjs",
     "strict": true,
-    "declaration": false,
+    "declaration": true,
     "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
@@ -11,10 +11,13 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "dist",
-    "rootDir": "src",
     "typeRoots": ["./node_modules/@types", "./types"],
-    "types": ["node"]
+    "baseUrl": ".",
+    "rootDir": "src",
+    "paths": {
+      "@utils/*": ["./src/utils/*"]
+    }
   },
-  "include": ["src", "types"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*", "types/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

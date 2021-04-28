@@ -7,6 +7,8 @@
  * -----
  */
 
+// import 'module-alias/register'; if need emit code
+
 setInterval(function () {
-  console.log('timer that keeps nodejs processing running');
-}, 1000 * 60 * 60);
+  console.log('timer that zkeeps nodejs processing running');
+}, 1000 * 2);
